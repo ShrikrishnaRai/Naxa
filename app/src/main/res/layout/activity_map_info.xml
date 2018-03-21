@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="naxa.naxaco.com.naxa.MapInfo.MapInfoActivity">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_above="@id/mapBuy"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <Button
+        android:layout_above="@id/ConsultMap"
+        android:id="@+id/mapBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where To Buy Maps"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ConsultMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:text="Consult about Map"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

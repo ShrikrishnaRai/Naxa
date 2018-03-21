@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/check"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/headings_headings"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAccent"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/image_traingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headings_headings"
+            android:background="@mipmap/traingle" />
+
+
+        <TextView
+            android:id="@+id/aTraingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="a"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="b" />
+
+        <TextView
+            android:id="@+id/cTraingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="c" />
+
+        <TextView
+            android:id="@+id/lengthA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/cTraingle"
+            android:text="lengthA" />
+
+        <TextView
+            android:id="@+id/lengthB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lengthA"
+            android:layout_alignBottom="@+id/lengthA"
+            android:layout_marginEnd="28dp"
+            android:layout_toStartOf="@+id/textView3"
+            android:text="lengthB" />
+
+
+            <TextView
+                android:id="@+id/lengthC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cTraingle"
+                android:layout_centerHorizontal="true"
+                android:text="lengthC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_to_be_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/saveTrainglularActivityButton"
+        android:layout_below="@id/relative_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/total_area"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/input_recyclerView_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_area"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <ImageButton
+
+        android:id="@+id/saveTrainglularActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/save" />
+
+    <ImageButton
+        android:id="@+id/inputTrainglularActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/inputTrainglularActivityButton"
+        android:text="Input" />
+
+
+</RelativeLayout>

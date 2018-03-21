@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+        <TextView
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/headings_traingle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/cardLengthOneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Length One" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/cardLengthTwoInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Length Two" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/cardLengthThreeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Length Three" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+
+            <EditText
+                android:editable="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/AreaAns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Area" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
